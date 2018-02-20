@@ -1,0 +1,35 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.btn-treehouse {
+  color: white;
+  padding: 3px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #6AD58B;
+  transition: background 0.3s ease;
+  width: 80px;
+  margin: 5px;
+  text-align: center;
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.tasks{
+  //display: inline-block;
+  margin-top: 40px;
+}
+
+#add-task{
+  margin-top: 60px;
+}

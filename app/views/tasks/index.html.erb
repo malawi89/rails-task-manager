@@ -1,0 +1,20 @@
+<h1>Here are your tasks:</h1>
+<% @tasks.each do |task| %>
+  <div class="tasks">
+    <strong><%= link_to task.title, task_path(task)%></strong>
+  <% if task.completed %>
+    <input type="checkbox" checked="yes" disabled>
+  <% else %>
+     <input type="checkbox" disabled>
+  <% end %>
+  </div>
+
+  <div class="btn-treehouse">
+    <%= link_to "Edit", edit_task_path(task) %>
+  </div>
+  <div class="btn-treehouse"><%= link_to "Delete", task_path(task), method: :delete %></div>
+<% end %>
+
+<div class = "btn-treehouse" id="add-task">
+  <%= link_to "Add a task", new_task_path %>
+</div>
